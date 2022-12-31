@@ -120,7 +120,7 @@
 # def n2(n):
 #     ls = []
 #     for i in range(n):
-#         numbers = int(input())                                 #avg of number
+#         numbers = int(ip())                                 #avg of number
 #         ls.append(numbers)
 #     print(ls)
 #     avg = sum(ls)/len(ls)
@@ -233,15 +233,15 @@
 
 
 
-# def o5(input_year):
-#       if (input_year%400 == 0):
-#           print("{}is a Leap Year" .format(input_year))
-#       elif (input_year%100 == 0):
-#           print("{} is Not the Leap Year".format(input_year))                     #leap year
-#       elif (input_year%4 == 0):
-#         print("{} is a Leap Year" .format(input_year))
+# def o5(ip_year):
+#       if (ip_year%400 == 0):
+#           print("{}is a Leap Year" .format(ip_year))
+#       elif (ip_year%100 == 0):
+#           print("{} is Not the Leap Year".format(ip_year))                     #leap year
+#       elif (ip_year%4 == 0):
+#         print("{} is a Leap Year" .format(ip_year))
 #       else:
-#         print("{} is Not the Leap Year" .format(input_year))
+#         print("{} is Not the Leap Year" .format(ip_year))
 # o5(1900)
 
 
@@ -323,7 +323,7 @@
 #             print("it is digit")                                                 #is digit or not
 #     else:
 #         print("it is ")
-# chas = input("choose a char:-")
+# chas = ip("choose a char:-")
 # s6(chas)
 
 #
@@ -386,17 +386,48 @@
 # print("consonents in the given string",consonent)
 
 
-i = "paapaag fueogidion"
-count = {}.fromkeys(i, 0)
+# i = "paapaag fueogidion"
+# count = {}.fromkeys(i, 0)
+# print(count)
+#
+# for char in i:
+#     if char in count:
+#          count[char] += 1
+# print(i,count)
+# print(max(i,key =count.get))
+#
+#
+# list = [4,2,7,9,1,8]
+# result =9
+# for i in range(len(list) -1):
+#     if list[i]+list[i+1] == result :
+#         print(list[i],list[i+1])
 
-for char in i:
-    if char in count:
-         count[char] += 1
-print(i,count)
-print(max(i,key =count.get))
+ip = "abcbcadhvhgghghgvgfcgctrcgcgchgvnbvcxzasdfgmnbhjkloiuytrewq"
+
+out_put = ""
+count =[]
+g = ""
+for i in range(len(ip)):
+    if ip[i] not in out_put:
+        out_put = out_put+ip[i]
+        # if i == len(ip)-1:
+            # if len(out_put) > len(g):
+            #     g = out_put
+            #     out_put = ip[i]
+
+    else:
+        if len(out_put) > len(g):
+            g = out_put
+            out_put = ip[i]
+        else:
+            out_put = ip[i]
+else:
+    if len(out_put) > len(g):
+        g = out_put
 
 
-
+print(g)
 
 
 
