@@ -16,3 +16,9 @@ while a>0:
     count = count*10+digit
     a =a//10
 print(count)
+
+
+
+
+
+

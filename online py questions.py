@@ -146,40 +146,12 @@
 # n4(24)
 
 
-# def n5(numbers):
-#       while numbers >= 0:
-#           if numbers % 2 == 0:
-#               print("{} is is even number ".format(numbers))                            #odd and even number
-#           else:
-#               print("{} is odd number ".format(numbers))
-#           break
 #
-# n5(32)
 #
 
-# def n6(first):
-#     for j in range(1,first):
-#         f = 0
-#         for i in range(2,j):
-#             if j  % i == 0:
-#                 f =1
-#         if f ==0:
-#             print("{} is a prime number ".format(j))             # Write a program in Python to check n prime  numbers
-#         else:
-#              print("{} is not prime number".format(j))
-#
-# n6(43)
 
 
-# def n7(fn,sn,tn):
-#     if fn <= sn and fn <= tn :
-#         print("{} is the smallest number".format(fn))
-#     elif sn <= fn and sn <= tn :
-#         print("{} is the smallest number".format(sn))                             # smallest number
-#     elif tn <= sn and tn <= fn :
-#         print("{} is the smallest number ".format(tn))
-#
-# n7(22,78,3)
+
 
 
 # def n8(base,top):
@@ -233,16 +205,6 @@
 
 
 
-# def o5(ip_year):
-#       if (ip_year%400 == 0):
-#           print("{}is a Leap Year" .format(ip_year))
-#       elif (ip_year%100 == 0):
-#           print("{} is Not the Leap Year".format(ip_year))                     #leap year
-#       elif (ip_year%4 == 0):
-#         print("{} is a Leap Year" .format(ip_year))
-#       else:
-#         print("{} is Not the Leap Year" .format(ip_year))
-# o5(1900)
 
 
 
@@ -250,184 +212,13 @@
 
 
                                    # string codes
-# def S1(char):
-#      # char = "s"
-#      st ="Hello worls my name is pavan\n"
-#      lt = list(st)
-#      for i in lt:                                                  #removing specified char
-#         if i != char:
-#             print("".join(i),end="",)
-#
-# def s2(ch):
-#     st = "Hello worls my name is pavan"
-#     st.replace(ch,"")                                                         #another simple way:
-#     print( st)
-#
-#
-# S1("r")
-# s2("p")
-
-
-# def s3(string,cha):
-#     count = 0
-#     for i in range(len(string)):
-#         if (string[i] == cha):                                               #occarence of a character
-#             count = count +1
-#     print(count)
-# string = "Hello world i am poavan"
-# cha = "o"
-# s3(string,cha)
-
-#
-# a = "care"
-# b = "race"
-# if len(a) == len(b):
-#     for i in range(len(a)):
-#         if a[i]   in b[::]:
-#             # i = i +1
-#
-#
-#             print("it is   anagram")
-#
-#
-#         else:
-#             print("it is not anagram")
 #
 
 
-# def s4(string):
-#     if string[::] == string[::-1]:
-#         print("it is palindrom")                             #palindrom
-#     else:
-#         print("it is not a palindrom")
-# string = "ppaavvaapp"
-# s4(string)
-
-
-
-# def s5(cha):
-#     vowels = ("a","A","e","E","i","I","o","O","u","U")
-#     if cha in vowels :
-#         print('it is a vowel')
-#     else:
-#         print("it is not vowel")
-#
-# s5("a")
-#
-
-
-# def s6(chas):
-#     print(chas.isdigit())
-#     for cha in chas:
-#         if cha >= str(0) and cha <= str(9) :
-#             print("it is digit")                                                 #is digit or not
-#     else:
-#         print("it is ")
-# chas = ip("choose a char:-")
-# s6(chas)
-
-#
-# a  = "hello world i am pavan"
-#
-# print(a.replace(" ","a"))
-#
-
-# a ="pavan new project"
-# print(a.upper())
-# result =""
-# for i in a:
-#     i= i.upper()                                                   #uppercase
-#     result += i
-# print(result)
-
-
-# string_1 = "pavan new project"
-# result =''
-# vowels = ("a","A","e","E","i","I","o","O","u","U")           #converting vowles into uppercase
-# for i in string_1:
-#     if i in vowels:
-#         i= i.upper()
-#     result += i
-# print(result)
-
-
-# string = "pavan new project"
-# vowels = ("a","A","e","E","i","I","o","O","u","U")
-# result = ''
-# for i in string:                                              #removing vowles in string
-#     if i in vowels:
-#         i =''
-#     result += i
-# print(result)
-
-
-# string = "pavan new project"
-# vowels = ("a","A","e","E","i","I","o","O","u","U")
-# count = 0
-# for i in string:
-#     if i in vowels:
-#         i = 1
-#         count += i
-# print(count)
-
-
-
-# string = "pavan new project"
-# vowels = ("a","A","e","E","i","I","o","O","u","U")
-# vowel = 0
-# consonent =0
-# for i in string:
-#      if i in vowels:
-#          vowel +=1                                                      #count of vowels and consonents
-#      elif i.isalpha():
-#          consonent += 1
-# print("total no of characters in the string is",len(string))
-# print("vowels in the given string is ",vowel)
-# print("consonents in the given string",consonent)
-
-
-# i = "paapaag fueogidion"
-# count = {}.fromkeys(i, 0)
-# print(count)
-#
-# for char in i:
-#     if char in count:
-#          count[char] += 1
-# print(i,count)
-# print(max(i,key =count.get))
 #
 #
-# list = [4,2,7,9,1,8]
-# result =9
-# for i in range(len(list) -1):
-#     if list[i]+list[i+1] == result :
-#         print(list[i],list[i+1])
-
-ip = "abcbcadhvhgghghgvgfcgctrcgcgchgvnbvcxzasdfgmnbhjkloiuytrewq"
-
-out_put = ""
-count =[]
-g = ""
-for i in range(len(ip)):
-    if ip[i] not in out_put:
-        out_put = out_put+ip[i]
-        # if i == len(ip)-1:
-            # if len(out_put) > len(g):
-            #     g = out_put
-            #     out_put = ip[i]
-
-    else:
-        if len(out_put) > len(g):
-            g = out_put
-            out_put = ip[i]
-        else:
-            out_put = ip[i]
-else:
-    if len(out_put) > len(g):
-        g = out_put
-
-
-print(g)
+#
+#
 
 
 
@@ -438,7 +229,40 @@ print(g)
 
 
 
+#
+#
 
 
+#
+
+
+#
+
+#
+
+
+#
+
+
+
+#
+
+#
+
+#
+#
+
+
+
+
+
+
+
+
+# a = [1,2,4]
+# b = [1,3,5]
+# c =[]
+# a.extend(b)
+# print(sorted(a))
 
 
