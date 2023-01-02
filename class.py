@@ -49,16 +49,64 @@
 
 
 
-class mine:
-    def __int__(self,m1,m2,m3):
-        self.m1 = m1
-        self.m2 = m2
-        self.m3 = m3
 
-    def avg(self):
-        return (self.m1 +self.m2+self.m3)/3
 
-s1 = mine(12,13,14)
-s2 = mine(11,2,22)
-print(s1.m1, s1.m2, s1.m3)
+class addition:
 
+    def __init__(self, name):
+        print("you have created obj for add class")
+        self.name = name
+        pass
+
+    def add_two_num(self, a, b):
+        c = a + b
+        return c
+
+    def print_name(self):
+        print(self.name)
+
+    def modifie_name(self, new_name):
+        self.name = new_name
+
+
+obj = addition("pavan")
+obj2 = addition("sekhar")
+# b = obj.add_two_num(2, 3)
+# c = obj.add_two_num(10,20)
+# print(c)
+
+
+obj.print_name()
+obj2.print_name()
+
+obj.modifie_name("yugesh")
+obj.print_name()
+obj2.print_name()
+
+
+
+
+
+
+
+
+
+
+
+class hub:
+    def __init__(self,a,b):
+        print("hello")
+        self.a = a
+        self.b=  b
+
+    def addi(self):
+        print(self.a +self.b)
+
+    def subb(self):
+        print(self.a - self.b)
+
+
+o = hub(6,3)
+o2 = hub(9,1)
+print(o.addi())
+print(o2.subb())
