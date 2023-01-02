@@ -143,11 +143,7 @@
 #         summ += flag
 #         print(flag)
 #
-# n4(24)
 
-
-#
-#
 
 
 
